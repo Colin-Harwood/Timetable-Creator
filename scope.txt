@@ -1,0 +1,43 @@
+Base setups:
+    Reading all info:
+        1. Manually typing and populating the arrays
+        2. Store all data in an external txt or csv file
+    Storing once read:
+        What needs to be stored:
+            1. Times
+            2. Module name
+            3. Lecture num / prac num
+            array (of structs of module) [
+                struct (module) {
+                    std::string name;
+                    int numLectGroups;
+                    int numLecPerWeek;
+                    int numPracs;
+                    int numTuts;
+                    bool lecCompulsory;
+                    bool tutCompulsory;
+                    struct(all of timeSlot structs) lectures;  // each struct = a group and will have to have arrays for each group in here
+                    struct(all of timeSlot structs) pracs;
+                    struct(all of timeSlot structs) tuts;
+                }
+                struct (module) {
+
+                }
+                struct (module) {
+                    
+                }
+            ]
+    Actually creating the timetable:
+        Go over all options:
+            Recursion
+        Store:
+            2d array
+            timeTable {
+                monday {}
+                next day {}
+                next day {}
+                next day {}
+                next day {}
+            }
+    Storing all:
+        3d array of the 2d timetables as an array
